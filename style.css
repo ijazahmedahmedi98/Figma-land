@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header_hero{
+    height: 500px;
+    background: linear-gradient(30deg , #37BDA6 , #CB1AE8);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header_nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.header_nav a{
+    color: white;
+    text-decoration: none;
+}
+ button{
+    padding: 7px 18px;
+    border-radius: 19px;
+    background-color: transparent;
+    border: 1px solid rgb(223, 222, 222);
+    color: white;
+}
