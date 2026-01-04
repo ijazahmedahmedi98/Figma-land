@@ -1,6 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
+body{
+    padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 }
 
@@ -8,7 +8,12 @@
     height: 840px;
     background: linear-gradient(30deg, #37BDA6, #CB1AE8);
 }
-
+.navbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
 header {
     display: flex;
     justify-content: space-around;
@@ -219,7 +224,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 1090px;
+    height: 1290px;
 
 }
 
@@ -336,4 +341,182 @@ footer {
 .developer-credit {
     font-size: 50px;
     font-weight: bold;
+}
+body{
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .navbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header_nav ul{
+        gap: 16px;
+    }
+    #signUp{
+        margin-left: 9px;
+    }
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:80% ;
+    }
+    .hero_img img{
+        width: 70%;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .hero_head{
+        width: 80%;
+    }
+    .managments{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .managments_parent{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .managment_child{
+        width: 90%;
+    }
+    .easy{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .easy_head{
+        width: 80%;
+    }
+    .easy img{
+        width: 80%;
+    }
+    .operation{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .operation img{
+        width: 300px;
+    }
+    .operation_head{
+        width: 80%;
+    }
+
+    .buissnes{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .buissnes_head{
+        width: 80%;
+    }
+    .buissnes_img img{
+        width: 80%;
+    }
+    .team{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .team_parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .team_head{
+        width: 80%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer_parent{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footerimg img{
+        width: 70%;
+    }
+    .name{
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .developer-credit{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .managments{
+        height: auto;
+    }
+    .easy{
+        height: auto;
+    }
+    .easy_head{
+        width: 70%;
+    }
+    .easy_img img{
+        width: 90%;
+    }
+     .operation_head{
+        width: 70%;
+    }
+    .operation_img img{
+        width: 90%;
+    }
+     .buissnes_head{
+        width: 90%;
+    }
+    .buissnes_img img{
+        width: 90%;
+    }
+    footer{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    .footer_parent{
+        display: flex;
+    }
+    .footer_second_child{
+        display: flex;
+    }
 }
